@@ -227,14 +227,14 @@ class TwoPlayerViewController: UIViewController {
         // Check if box is not occupied by another character
         if(sender.title( for: .normal ) == nil) {
             
-            // Current turn Nought, after Cross
+            // Current turn Noughts, after Crosses
             if(currentTurn == Turn.Nought){
                 sender.setTitle(Nought, for: .normal)
                 currentTurn = Turn.Cross
                 turnLabel.text = Cross
             }
             
-            // Current turn Cross, after Nought
+            // Current turn Crosses, after Noughts
             else if(currentTurn == Turn.Cross){
                 sender.setTitle(Cross, for: .normal)
                 currentTurn = Turn.Nought
